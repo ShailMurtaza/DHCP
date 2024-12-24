@@ -12,7 +12,7 @@ for interface in "${interfaces[@]}"; do
     echo "$i) $interface"
     i=$((i + 1))
 done
-read -p "Interface with connection: " choice
+read -p "Interface: " choice
 
 if [[ $choice -le 0 || $choice -gt ${#interfaces[@]} ]]; then
     echo "\033[31m [-] Invalid Choice \033[0m\n"
